@@ -9,7 +9,8 @@ project.ext {
     rxAndroid = "2.0.1"
     rxRetrofitAdapter = "2.3.0"
     retrofit = "2.3.0"
-
+    gsonConverter = "2.3.0"
+    gson = "2.8.2"
 }
 
 android {
@@ -41,6 +42,12 @@ dependencies {
     // Rx
     implementation "io.reactivex.rxjava2:rxjava:$project.rxJava"
     implementation "io.reactivex.rxjava2:rxandroid:$project.rxAndroid"
+
+    // Retrofit
     implementation "com.squareup.retrofit2:adapter-rxjava2:$project.rxRetrofitAdapter"
     implementation "com.squareup.retrofit2:retrofit:$project.retrofit"
+
+    // GSON
+    implementation "com.squareup.retrofit2:converter-gson:$project.gsonConverter"
+    implementation "com.google.code.gson:gson:$project.gson"
 }

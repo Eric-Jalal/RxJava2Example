@@ -28,8 +28,8 @@ public class FlowableExample extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn = (Button) findViewById(R.id.main_helloWorld_btn);
-        textView = (TextView) findViewById(R.id.main_helloWorld_textView);
+        btn = findViewById(R.id.main_helloWorld_btn);
+        textView = findViewById(R.id.main_helloWorld_textView);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
